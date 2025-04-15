@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Footer = ({persona}) => {
+const Footer = ({ persona }) => {
   return (
     <footer className="app-footer">
       <p>Nombre: {persona.nombre} </p>

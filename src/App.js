@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./page/Home.jsx";
-import './css/styles.css';
+import "./css/styles.css";
 
 function App() {
   let persona = {
@@ -10,15 +10,15 @@ function App() {
     estudios: "Programacion",
     presente: false,
   };
-  let personas =[
+  let personas = [
     {
-      nombre:"Carlos",
-      edad:25
+      nombre: "Carlos",
+      edad: 25,
     },
     {
-      nombre:"Natalia",
-      edad:20
-    }
+      nombre: "Natalia",
+      edad: 20,
+    },
   ];
   return <Home persona={persona} personas={personas} />;
 }
