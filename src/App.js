@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
 import Home from "./page/Home.jsx";
+import './css/styles.css';
 
 function App() {
   let persona = {
     nombre: "Agustin",
     edad: 25,
     estudios: "Programacion",
-    Presente: false,
+    presente: false,
   };
   let personas =[
     {
