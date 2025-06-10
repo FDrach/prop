@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Trabajo Práctico – Programación 3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Año:** 2025
+**Profesor:** Matías Sebastián Chocobar
+**Carrera:** Tecnicatura Universitaria en Programación
+**Tema:** Comunicación de Props y Renderizado de Arrays con .map()
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Objetivos
 
-### `npm start`
+*   Profundizar en el manejo de props en componentes React sin y con destructuring.
+*   Practicar el recorrido dinámico de arrays de objetos mediante `.map()`.
+*   Reforzar la estructura padre-hijo en la gestión de datos.
+*   Fomentar la claridad en la transformación y presentación de datos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Consigna
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Realizar un proyecto grupal en React donde:
 
-### `npm test`
+*   **`App.js` (componente padre)** defina tres variables:
+    ```javascript
+    let nombre = "Pablo";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    let persona = {
+      nombre: 'Carlos',
+      edad: 20,
+      curso: 'programación',
+      Asistencia: false
+    };
 
-### `npm run build`
+    let grupo = [
+      { nombre: 'Lucas', edad: 25 },
+      { nombre: 'Luciana', edad: 19 },
+      { nombre: 'Julieta', edad: 26 },
+      { nombre: 'Jorge', edad: 30 },
+      { nombre: 'Cristian', edad: 30 }
+    ];
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*   Pasar estas tres variables completas por props al componente `Home.jsx` sin destructurar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*   En `Home.jsx` recibir props, luego destructurar y reenviar cada dato como props individuales al componente `Main.jsx`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*   En `Main.jsx` usar los datos destructurados para:
+    *   Mostrar el nombre (string).
+    *   Desplegar en lista el objeto persona y usar un ternario para Asistencia (`"Presente"` / `"Ausente"`).
+    *   Recorrer el array `grupo` con `.map()`, mostrando nombre y edad de cada integrante.
 
-### `npm run eject`
+## 📝 Requisitos Generales
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+*   Trabajo grupal: Desarrollo en clases.
+*   Cada integrante debe tener su propio repositorio en GitHub con al menos 5 commits significativos.
+*   En `App.js` incluir un comentario al inicio con nombre completo y legajo de cada integrante.
+*   Uso de Create React App, componentes funcionales y hooks si fuese necesario.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Estructura del Proyecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+├── App.js
+├── index.js
+├── pages/
+│   └── HomePages.jsx
+└── components/
+    ├── Home.jsx
+    └── Main.jsx
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Tecnologías y Técnicas
 
-## Learn More
+*   React (CRA) y JSX.
+*   Props, destructuring, `.map()`, ternario.
+*   Git y GitHub para control de versiones.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Estética
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*   Diseño limpio y legible.
+*   Uso básico de CSS para separar secciones (paddings/margins).
+*   Presentación clara de listas y títulos.
 
-### Code Splitting
+## 📬 Entrega
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enviar URL del repositorio al profesor vía email.
